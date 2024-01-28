@@ -6,7 +6,7 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 want_continue = False
 
 
-def encrypt(value, number):
+def encrypt(text, shift):
     new_word = []
     for letter in text:
         current_index = alphabet.index(letter)
@@ -19,7 +19,7 @@ def encrypt(value, number):
     print(output_text)
 
 
-def decrypt(value, number):
+def decrypt(text, shift):
     new_word = []
     for letter in text:
         current_index = alphabet.index(letter)
@@ -39,6 +39,7 @@ while not want_continue:
     shift = int(input("Type the shift number:\n"))
 
     if shift > 26:
+        
 
     if direction == "encode":
         encrypt(text, shift)
