@@ -38,6 +38,8 @@ while not want_continue:
     text = input("Type your message:\n").lower()
     shift = int(input("Type the shift number:\n"))
 
+    if shift > 26:
+
     if direction == "encode":
         encrypt(text, shift)
     elif direction == "decode":
